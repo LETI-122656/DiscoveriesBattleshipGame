@@ -3,6 +3,10 @@
  */
 package iscteiul.ista.battleship;
 
+
+/**
+ * Represents a barge ship in the Battleship game.
+ */
 public class Barge extends Ship {
     private static final Integer SIZE = 1;
     private static final String NAME = "Barca";
@@ -15,7 +19,11 @@ public class Barge extends Ship {
         super(Barge.NAME, bearing, pos);
         getPositions().add(new Position(pos.getRow(), pos.getColumn()));
     }
-
+    /**
+     * Returns the size of the barge.
+     *
+     * @return the size of the barge
+     */
     @Override
     public Integer getSize() {
         return SIZE;
